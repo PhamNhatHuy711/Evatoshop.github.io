@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link rel="stylesheet" href="./public/css/carterogy.css"> <!-- Đường dẫn đến file CSS của bạn -->
+  <link rel="stylesheet" href="./public/css/headfoot.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="headerpro">
+        <div class="header-top">
+            <div class="conterner">
+                <div class="logo">
+                    <a href="#">
+                        <img src="https://jaroti-be87.kxcdn.com/jaroti/wp-content/themes/jaroti/images/logo.png"
+                            alt="Jaroti" title="Jaroti" class="normal-logo">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="./home.html" class="menu__link" target="_blank">Trang chủ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./search.html" class="menu__link" target="_blank">Tìm kiếm</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./login.html" class="menu__link" target="_blank">Đăng nhập</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./carterogy.html" class="menu__link" target="_blank">Sản phẩm</a>
+                        </li>                        <li class="menu__item">
+                          <button id="cartButton" class="menu__link"><i class="fa-solid fa-basket-shopping"></i></button>
+                          <!-- Phần Giỏ Hàng ở đây -->
+                          <div id="shoppingCart" class="shopping-cart">
+                            <div class="cart-items">
+                                <div class="cart-header">
+                                    <div class="header-item">Hình ảnh</div>
+                                    <div class="header-item">Tên sản phẩm</div>
+                                    <div class="header-item">Giá tiền</div>
+                              </div>
+                              <!-- Các mặt hàng trong giỏ hàng sẽ được thêm vào đây -->
+                          </div>
+                          <div class="cart-summary">
+                              <p>Tổng cộng: <span id="cartTotal">$0.00</span></p>
+                          </div>
+                            <button class="checkout">Thanh toán</button>
+                            <button class="view-cart">Xem Giỏ Hàng</button>
+                          </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+  </header>
+
+  <section class="category">
+    <h2>Jewely</h2>
+    <div class="products">
+      <!-- Danh sách các sản phẩm thuộc category này -->
+      <div class="product">
+        <img src="https://jaroti-be87.kxcdn.com/jaroti/wp-content/uploads/2022/03/06.jpg" alt="Product 1">
+        <div class="product-title">
+          <p>Stacking Rings 5 Pack</p>
+        </div>
+        <div class="product-price">38.74$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://jaroti-be87.kxcdn.com/jaroti/wp-content/uploads/2022/03/07.jpg" alt="Product 2">
+        <div class="product-title">
+          <p>Baguette Rings of Two Blue</p>
+        </div>
+        <div class="product-price">69.75$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" onclick="addToCartFromElement(this)" >Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://jaroti-be87.kxcdn.com/jaroti/wp-content/uploads/2022/03/08.jpg" alt="Product 3">
+        <div class="product-title">
+          <p>Gold Vermeil Chunky Bracelet</p>
+        </div>
+        <div class="product-price">38.24$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://jaroti-be87.kxcdn.com/jaroti/wp-content/uploads/2022/03/09.jpg" alt="Product 4">
+        <div class="product-title">
+          <p>Twisted Rope Bracelet</p>
+        </div>
+        <div class="product-price">340.99$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://jaroti-be87.kxcdn.com/jaroti/wp-content/uploads/2022/03/16.jpg" alt="Product 5">
+        <div class="product-title">
+          <p>Necklaces Pendants Golden</p>
+        </div>
+        <div class="product-price">260.45$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart"  onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://jaroti-be87.kxcdn.com/jaroti/wp-content/uploads/2022/03/15-840x840.jpg" alt="Product 6">
+        <div class="product-title">
+          <p>Napkin Ring Metal Leaf</p>
+        </div>
+        <div class="product-price">300.47$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" data-id="6" data-name="Retreat Twisted Loop Earring" data-product-price="19.99" onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://jaroti-be87.kxcdn.com/jaroti/wp-content/uploads/2022/03/14.jpg" alt="Product 8">
+        <div class="product-title">
+          <p>Ring Foresh Feather</p>
+        </div>
+        <div class="product-price">130.49$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart"  onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://jaroti-be87.kxcdn.com/jaroti/wp-content/uploads/2022/03/10.jpg" alt="Product 8">
+        <div class="product-title">
+          <p>London Charm Bracelet</p>
+        </div>
+        <div class="product-price">142.42$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart"  onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+  </section>
+  <script src="./public/js/cart.js"></script>
+</body>
+</html>
+<footer class="footervip">
+    <div class="conterner">
+        <div style="width: 18rem;">
+            <ul>
+                <li class="li2">
+                    <h5>DELIVERY & RETURN</h5>
+                </li>
+                <li class="li3">Check Order</li>
+                <li class="li3">Delivery & Collection</li>
+                <li class="li3">Careers</li>
+                <li class="li3">Delivery Return</li>
+            </ul>
+        </div>
+        <div style="width: 18rem;">
+            <ul>
+                <li class="li2">
+                    <h5>ABOUT</h5>
+                </li>
+                <li class="li3">Our Brand</li>
+                <li class="li3">Charity</li>
+                <li class="li3">CSR</li>
+                <li class="li3">Careers</li>
+            </ul>
+        </div>
+        <div style="width: 20rem;">
+            <ul>
+                <li class="li2">
+                    <H5>CUSTOMER SERVICES</H5>
+                </li>
+                <li class="li3">Contact Us</li>
+                <li class="li3">Opening Hours</li>
+                <li class="li3">Size Guides</li>
+                <li class="li3">Gift Cards</li>
+            </ul>
+        </div>
+
+        <div style="width: 40rem;">
+            <ul>
+                <li class="li2">
+                    <H4>NEWSLETTER SIGN UP</H4>
+                </li>
+                <li class="li3">Enjoy 15% off* your first order when you sign up to our newsletter</li>
+                <li class="li3">
+                    <form action="#" method="post" id="subscribeForm">
+                        <input type="email" name="email" class="subscribe-input border border-2 border-dark rounded-pill p-2" placeholder="Your e-mail address"
+                            required>
+                        <button type="submit" class="subscribe-button">Subscribe</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>

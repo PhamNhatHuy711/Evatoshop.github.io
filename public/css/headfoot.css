@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  .conterner {
+    display: flex;
+    align-items: start;
+    padding: 2rem;
+  }
+  .header-top {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-color: rgba(235, 235, 235, 1);
+    color: rgba(0, 0, 0, 1)
+  }
+  
+  .normal-logo{
+    width: 100px;
+    height: 30px;
+    padding: 0.2rem;
+  }
+  .menu {
+    margin-left: 14%;
+    position: relative;
+    z-index: 2;
+    
+    
+  }
+  
+  .menu__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+   
+    
+  }
+  
+  .menu__item {
+    margin: 0 2.5rem;
+    color: black;
+  }
+  .menu__link {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.2s linear;
+    text-decoration: none;
+  }
+  
+  .menu__link:hover {
+    color: red;
+  }
+  .footervip{
+      background-color:black;
+  }
+  .footer .conterner {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .li2{
+    color:aliceblue
+  }.li3{
+    color: #858383;
+    line-height: 22px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+  ul{
+    list-style: none;
+  }
+  .subscribe-form {
+    text-align: center;
+  }
+  
+  .subscribe-input {
+    padding: 4px;
+    font-size: 16px;
+  }
+  
+  .subscribe-button {
+    padding: 10px 20px;
+    background-color:black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .subscribe-button:hover {
+    background-color: #eef3ee;
+    color: black;
+  }

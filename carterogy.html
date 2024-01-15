@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link rel="stylesheet" href="./public/css/carterogy.css"> <!-- Đường dẫn đến file CSS của bạn -->
+  <link rel="stylesheet" href="./public/css/headfoot.css">
+</head>
+<body>
+    <header class="headerpro">
+        <div class="header-top">
+            <div class="conterner">
+                <div class="logo">
+                    <a href="#">
+                        <img src="https://jaroti-be87.kxcdn.com/jaroti/wp-content/themes/jaroti/images/logo.png"
+                            alt="Jaroti" title="Jaroti" class="normal-logo">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="./home.html" class="menu__link" target="_blank">Trang chủ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./search.html" class="menu__link" target="_blank">Tìm kiếm</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./login.html" class="menu__link" target="_blank">Đăng nhập</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./carterogy.html" class="menu__link" target="_blank">Sản phẩm</a>
+                        </li>                        <li class="menu__item">
+                          <button id="cartButton" class="menu__link">Giỏ hàng</button>
+                          <!-- Phần Giỏ Hàng ở đây -->
+                          <div id="shoppingCart" class="shopping-cart">
+                            <div class="cart-items">
+                              <div class="cart-header">
+                                <div class="header-item">Hình ảnh</div>
+                                <div class="header-item">Tên sản phẩm</div>
+                                <div class="header-item">Giá tiền</div>
+                              </div>
+                              <!-- Các mặt hàng trong giỏ hàng sẽ được thêm vào đây -->
+                          </div>
+                          <div class="cart-summary">
+                            <h2>Tổng cộng: <span id="cartTotal">$0.00</span></h2>
+                        </div>
+                          <button class="checkout">Thanh toán</button>
+                          <button class="view-cart">Xem Giỏ Hàng</button>
+                          </div>
+                          </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+  </header>
+
+  <section class="category">
+    <h2>Accessories</h2>
+    <div class="products">
+      <!-- Danh sách các sản phẩm thuộc category này -->
+      <div class="product">
+        <img src="./public/images/sp1.jpg" alt="Product 1">
+        <div class="product-title">
+          <p>Gold-Plated Pearl Earrings</p>
+        </div>
+        <div class="product-price">19.99$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" data-id="1" onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="./public/images/sp2.jpg" alt="Product 2">
+        <div class="product-title">
+          <p>Pearl Drop Stud Set of Two</p>
+        </div>
+        <div class="product-price">19.99$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" data-id="2" data-name="Pearl Drop Stud Set of Two" data-product-price="19.99"onclick="addToCartFromElement(this)" >Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="./public/images/sp3.jpg" alt="Product 3">
+        <div class="product-title">
+          <p>Double Wave Hoop Earings</p>
+        </div>
+        <div class="product-price">19.99$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" data-id="3" data-name="Double Wave Hoop Earings" data-price="19.99"onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="./public/images/sp4.jpg" alt="Product 4">
+        <div class="product-title">
+          <p>Leaf Short Drop Earrings</p>
+        </div>
+        <div class="product-price">19.99$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" data-id="4" data-name="Leaf Short Drop Earrings" data-product-price="19.99" onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="./public/images/sp5.jpg" alt="Product 5">
+        <div class="product-title">
+          <p>Stone Short Drop Earrings</p>
+        </div>
+        <div class="product-price">19.99$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" data-id="5" data-name="Stone Short Drop Earrings" data-product-price="19.99" onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="./public/images/sp6.jpg" alt="Product 6">
+        <div class="product-title">
+          <p>Retreat Twisted Loop Earring</p>
+        </div>
+        <div class="product-price">19.99$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" data-id="6" data-name="Retreat Twisted Loop Earring" data-product-price="19.99" onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="./public/images/sp7.jpg" alt="Product 8">
+        <div class="product-title">
+          <p>Beaded Hoop Earrings</p>
+        </div>
+        <div class="product-price">19.99$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" data-id="8" data-name="Beaded Hoop Earrings" data-product-price="19.99" onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="./public/images/sp8.jpg" alt="Product 8">
+        <div class="product-title">
+          <p>Beaded Hoop Earrings</p>
+        </div>
+        <div class="product-price">19.99$</div>
+        <button class ="detail">Xem thêm</button>
+        <button class="add-to-cart" data-id="8" data-name="Beaded Hoop Earrings" data-product-price="19.99" onclick="addToCartFromElement(this)">Add to Cart</button>
+      </div>
+  </section>
+  <script src="./public/js/cart.js"></script>
+</body>
+</html>
+<footer class="footervip">
+    <div class="conterner">
+        <div style="width: 18rem;">
+            <ul>
+                <li class="li2">
+                    <h5>DELIVERY & RETURN</h5>
+                </li>
+                <li class="li3">Check Order</li>
+                <li class="li3">Delivery & Collection</li>
+                <li class="li3">Careers</li>
+                <li class="li3">Delivery Return</li>
+            </ul>
+        </div>
+        <div style="width: 18rem;">
+            <ul>
+                <li class="li2">
+                    <h5>ABOUT</h5>
+                </li>
+                <li class="li3">Our Brand</li>
+                <li class="li3">Charity</li>
+                <li class="li3">CSR</li>
+                <li class="li3">Careers</li>
+            </ul>
+        </div>
+        <div style="width: 20rem;">
+            <ul>
+                <li class="li2">
+                    <H5>CUSTOMER SERVICES</H5>
+                </li>
+                <li class="li3">Contact Us</li>
+                <li class="li3">Opening Hours</li>
+                <li class="li3">Size Guides</li>
+                <li class="li3">Gift Cards</li>
+            </ul>
+        </div>
+
+        <div style="width: 40rem;">
+            <ul>
+                <li class="li2">
+                    <H4>NEWSLETTER SIGN UP</H4>
+                </li>
+                <li class="li3">Enjoy 15% off* your first order when you sign up to our newsletter</li>
+                <li class="li3">
+                    <form action="#" method="post" id="subscribeForm">
+                        <input type="email" name="email" class="subscribe-input border border-2 border-dark rounded-pill p-2" placeholder="Your e-mail address"
+                            required>
+                        <button type="submit" class="subscribe-button">Subscribe</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>

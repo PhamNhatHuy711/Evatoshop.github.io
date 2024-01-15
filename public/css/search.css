@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+.Thinhnguvc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: whitesmoke;
+}
+
+#search-box{
+    background-color:white;
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: 750px;
+
+}
+
+#search-box #search-text{
+    outline: none;
+    border: none;
+    background: none;
+    padding: 10px 10px;
+    font-size: 19px;
+    width: 94.5%;
+
+}
+
+#search-btn{
+    background-color:white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
